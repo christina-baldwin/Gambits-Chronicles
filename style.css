@@ -1,99 +1,136 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* MAIN COLOUR: #155e75
+GREY: #343a40
+*/
+
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: sans-serif;
-  color: #444444;
+  font-family: "Lato", sans-serif;
+  color: #343a40;
   line-height: 1.5;
-  border-top: 10px solid #bd4a4a;
-  border-bottom: 10px solid #bd4a4a;
+  border-bottom: 15px solid #155e75;
   position: relative;
   width: 800px;
   margin: 0 auto;
 }
 
-.main-header {
-  background-color: #d3d3d3;
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-.author {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-.author-img {
-  display: inline-block;
-}
-
-.home-img {
-  width: 50%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.main-text {
-  margin-bottom: 20px;
-}
-
-.characteristics {
-  margin-bottom: 10px;
-}
-
-.characteristics-list {
-  margin-left: 25px;
-  list-style: circle;
-  margin-bottom: 30px;
-}
-
-li {
-  margin-bottom: 10px;
+img {
+  width: 100%;
 }
 
 p {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
-/* HYPERLINKS */
-.main-header a:link,
-a:visited {
-  color: #bd4a4a;
-  font-size: 15px;
-  text-decoration: none;
+/* HEADER */
+.main-header {
+  border-bottom: solid 5px #155e75;
+  padding: 20px;
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.main-header a:hover,
+
+/* HERO IMAGE */
+.home-img {
+  margin-bottom: 24px;
+}
+
+/* ABOUT GAMBIT */
+.about-gambit {
+  margin-bottom: 32px;
+}
+/* FEATURED POSTS GRID */
+.featured-posts {
+  margin-bottom: 32px;
+}
+
+.col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+.post-box {
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.post-text {
+  padding: 10px;
+}
+
+.post-img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* LISTS */
+.about-gambit-list {
+  margin-left: 25px;
+  list-style: circle;
+  margin-bottom: 32px;
+}
+
+.information-list {
+  margin-left: 25px;
+  list-style: circle;
+  margin-bottom: 48px;
+}
+
+/* LINKS AND BUTTONS */
+nav a:link,
+a:visited {
+  color: #155e75;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 20px;
+}
+nav a:hover,
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
   cursor: pointer;
 }
 
-/* BUTTON */
-.like {
-  cursor: pointer;
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
+.read-more:link,
+.read-more:visited {
+  background-color: #155e75;
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: uppercase;
   display: inline-block;
-  padding: 10px;
-  background-color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
 }
 
-.like:hover {
+.read-more:hover,
+.read-more:active {
+  background-color: #0e7490;
   cursor: pointer;
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  display: inline-block;
-  padding: 10px;
-  background-color: black;
-  color: white;
 }
 
-/* COPYRIGHT */
+/* FOOTER */
+.nav-bottom {
+  margin-bottom: 24px;
+}
 .copyright-text {
   font-size: 13px;
   margin-bottom: 10px;
@@ -105,14 +142,15 @@ h1,
 h2,
 h3,
 h4 {
-  color: #bd4a4a;
+  color: #155e75;
   margin-bottom: 10px;
 }
 h1 {
   font-style: italic;
   font-weight: bold;
-  font-size: 25px;
-  letter-spacing: 3px;
+  font-size: 18px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
 h2 {

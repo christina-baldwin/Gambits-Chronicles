@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gambit's Life</title>
+    <title>Gambit's Chronicles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
   </head>
+
   <body>
     <header class="main-header">
-      <h1>Gambit's Life</h1>
-      <nav>
-        <a href="blog.html">Blog</a>
-        <a href="milk_snake_info.html">Milk Snake Info</a>
-        <a href="backstory.html">Backstory</a>
-        <a href="vet_history.html">Vet History</a>
-        <a href="gallery.html">Gallery</a>
+      <h1>Gambit's Chronicles</h1>
+      <nav class="nav-top">
+        <a href="#">Home</a>
+        <a href="#">About Gambit</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
       </nav>
     </header>
 
     <article>
-      <h2>Welcome Page</h2>
+      <!-- <h2>Welcome Page</h2> -->
       <!-- <img
         class="author-img"
         src="images/IMG_6197a.jpg"
         alt="Headshot of Christina Baldwin"
         height="150"
       /> -->
-      <p class="author">Created by <strong>Christina Baldwin</strong></p>
       <img
         class="home-img"
-        src="images/IMG_4220a.JPG"
+        src="images/11174648_1068310616529610_885691914027218923_o_narrow.jpg"
         alt="Image of Gambit"
         width="250"
       />
-      <div class="main-text">
+      <section class="main-text">
         <p>This is a website dedicated to my milk snake, <em>Gambit</em>.</p>
         <p>
           I created this website as a way to practice my coding skills but also
@@ -48,19 +53,80 @@
           stories related to Gambit either currently or from the past.
         </p>
         <p>Thanks for visiting &#128522;</p>
-      </div>
+      </section>
 
-      <h3 class="characteristics">Gambit's Characteristics</h3>
-      <ul class="characteristics-list">
-        <li>Species: Milk snake</li>
-        <li>Sex: Male (I think)</li>
-        <li>Age: 17 years old</li>
-        <li>Length: approx. 1m</li>
-        <li>Weight: n/a (I need to weigh him)</li>
-      </ul>
+      <section class="about-gambit">
+        <h3 class="about-gambit-tile">About Gambit</h3>
+        <ul class="about-gambit-list">
+          <li>Species: Milk snake</li>
+          <li>Sex: Male (I think)</li>
+          <li>Age: 17 years old</li>
+          <li>Length: approx. 1m</li>
+          <li>Weight: n/a (I need to weigh him)</li>
+        </ul>
+      </section>
+
+      <section class="featured-posts">
+        <h3 class="featured-posts-title">Featured Posts</h3>
+        <div class="col-grid">
+          <figure class="post-box post-1">
+            <img
+              class="post-img"
+              src="images/1262829_707682829259059_1657412534_o.jpg"
+            />
+            <div class="post-text">
+              <h4>Bringing Gambit Home</h4>
+              <p>
+                The story of when I found Gambit in a pet shop and brought him
+                home.
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </figure>
+
+          <figure class="post-box post-2">
+            <img src="images/IMG_4594.JPG" class="post-img" />
+            <div class="post-text">
+              <h4>My History with Snakes</h4>
+              <p>
+                How my fascination with snakes developed and a story from my
+                chlidhood.
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </figure>
+
+          <figure class="post-box post-3">
+            <img class="post-img" src="images/IMG_4236.JPG" />
+            <div class="post-text">
+              <h4>Learning as you Go</h4>
+              <p>
+                The first few months of Gambit living with me and what I
+                learned.
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="information">
+        <h3 class="information-title">Milk Snake Information</h3>
+        <ul class="information-list">
+          <li>Average lifespan:</li>
+          <li>Average length:</li>
+          <li>Average weight:</li>
+        </ul>
+      </section>
     </article>
-    <button class="like">❤️Like</button>
+
     <footer>
+      <nav class="nav-bottom">
+        <a href="#">Home</a>
+        <a href="#">About Gambit</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
       <p class="copyright-text">Copyright &copy; 2024 by Christina Baldwin</p>
     </footer>
   </body>
