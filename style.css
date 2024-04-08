@@ -10,6 +10,8 @@ FONT SIZE SYSTEM (px)
 GREY: #343a40
 */
 
+/* INHERITED STYLES */
+
 * {
   padding: 0;
   margin: 0;
@@ -32,6 +34,35 @@ img {
 
 p {
   margin-bottom: 16px;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #155e75;
+}
+h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 44px;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 12px;
 }
 
 /* HEADER */
@@ -57,7 +88,69 @@ p {
 /* ABOUT GAMBIT */
 .about-gambit {
   margin-bottom: 44px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 40px;
+
+  background-color: #155e75;
+  color: white;
+
+  padding: 16px;
+
+  border-radius: 12px;
 }
+.about-gambit-tile {
+  grid-column: 1 / -1;
+  color: white;
+  margin-bottom: 24px;
+  border-bottom: 5px solid white;
+}
+.species {
+  text-transform: uppercase;
+  grid-column: 1;
+  grid-row: 2;
+}
+.milk-snake {
+  grid-column: 1;
+  grid-row: 3;
+}
+.sex {
+  text-transform: uppercase;
+  grid-column: 2;
+  grid-row: 2;
+}
+.male {
+  grid-column: 2;
+  grid-row: 3;
+}
+.age {
+  text-transform: uppercase;
+  grid-column: 3;
+  grid-row: 2;
+}
+.yo {
+  grid-column: 3;
+  grid-row: 3;
+}
+.length {
+  text-transform: uppercase;
+  grid-column: 4;
+  grid-row: 2;
+}
+.approx {
+  grid-column: 4;
+  grid-row: 3;
+}
+.weight {
+  text-transform: uppercase;
+}
+/* .about-gambit-list {
+  margin-left: 25px;
+  list-style: circle;
+  margin-bottom: 44px;
+} */
+
 /* FEATURED POSTS GRID */
 .featured-posts {
   margin-bottom: 44px;
@@ -84,11 +177,6 @@ p {
 }
 
 /* LISTS */
-.about-gambit-list {
-  margin-left: 25px;
-  list-style: circle;
-  margin-bottom: 44px;
-}
 
 .information-list {
   margin-left: 25px;
@@ -140,31 +228,4 @@ a:active {
   font-size: 13px;
   margin-bottom: 10px;
   font-style: italic;
-}
-
-/* HEADINGS */
-h1,
-h2,
-h3,
-h4 {
-  color: #155e75;
-}
-h1 {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 18px;
 }
