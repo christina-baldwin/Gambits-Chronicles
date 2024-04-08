@@ -23,6 +23,7 @@ body {
   position: relative;
   width: 800px;
   margin: 0 auto;
+  font-size: 18px;
 }
 
 img {
@@ -49,13 +50,17 @@ p {
   margin-bottom: 24px;
 }
 
+.main-text {
+  margin-bottom: 44px;
+}
+
 /* ABOUT GAMBIT */
 .about-gambit {
-  margin-bottom: 32px;
+  margin-bottom: 44px;
 }
 /* FEATURED POSTS GRID */
 .featured-posts {
-  margin-bottom: 32px;
+  margin-bottom: 44px;
 }
 
 .col-grid {
@@ -70,7 +75,7 @@ p {
 }
 
 .post-text {
-  padding: 10px;
+  padding: 12px;
 }
 
 .post-img {
@@ -82,13 +87,13 @@ p {
 .about-gambit-list {
   margin-left: 25px;
   list-style: circle;
-  margin-bottom: 32px;
+  margin-bottom: 44px;
 }
 
 .information-list {
   margin-left: 25px;
   list-style: circle;
-  margin-bottom: 48px;
+  margin-bottom: 52px;
 }
 
 /* LINKS AND BUTTONS */
@@ -143,7 +148,6 @@ h2,
 h3,
 h4 {
   color: #155e75;
-  margin-bottom: 10px;
 }
 h1 {
   font-style: italic;
@@ -154,9 +158,13 @@ h1 {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
 }
