@@ -15,15 +15,18 @@ GREY: #343a40
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #343a40;
   line-height: 1.5;
   border-bottom: 15px solid #155e75;
-  position: relative;
-  width: 800px;
+}
+
+.container {
+  width: 1200px;
   margin: 0 auto;
   font-size: 18px;
 }
@@ -34,25 +37,26 @@ img {
 
 p {
   margin-bottom: 16px;
+  font-size: 20px;
 }
-h1,
-h2,
-h3,
-h4 {
-  color: #155e75;
+
+ul {
+  margin-bottom: 16px;
+  font-size: 20px;
 }
+
 h1 {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 18px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 1.05;
+  margin-bottom: 32px;
 }
 
 h2 {
   font-size: 44px;
   margin-bottom: 16px;
   letter-spacing: -1px;
+  color: #155e75;
 }
 
 h3 {
@@ -66,28 +70,101 @@ h4 {
 }
 
 /* HEADER */
-.main-header {
-  border-bottom: solid 5px #155e75;
-  padding: 20px;
+header {
+  height: 100vh;
+  position: relative;
+
+  background-image: linear-gradient(
+      rgba(24, 24, 24, 0.6),
+      rgba(24, 24, 24, 0.6)
+    ),
+    url(images/hero-img.jpg);
+  background-color: #0e7490;
+  background-size: cover;
+  color: white;
+}
+.logo {
+  width: 20%;
+}
+
+.nav-top {
+  border-bottom: solid 5px white;
+  padding: 32px;
   margin-bottom: 24px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
 }
 
-/* HERO IMAGE */
-.home-img {
-  margin-bottom: 24px;
+.nav-top a:link,
+a:visited {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
+.nav-top a:hover,
+a:active {
+  text-decoration: none;
+  color: #12a1c9;
+  cursor: pointer;
+}
+
+.hero {
+  width: 1200px;
+  position: absolute;
+  /* in relation to the parent size */
+  left: 50%;
+  top: 50%;
+  /* in relation to the element size */
+  transform: translate(-50%, -50%);
+}
+
+.hero-inner {
+  width: 50%;
+}
+
+.hero-inner p {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #155e75;
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 24px;
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 15px;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #0e7490;
+  cursor: pointer;
+}
+
+/* WELCOME SECTION */
 .main-text {
-  margin-bottom: 44px;
+  margin-bottom: 80px;
+  padding-top: 96px;
 }
 
 /* ABOUT GAMBIT */
 .about-gambit {
-  margin-bottom: 44px;
+  margin-bottom: 80px;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -153,7 +230,7 @@ h4 {
 
 /* FEATURED POSTS GRID */
 .featured-posts {
-  margin-bottom: 44px;
+  margin-bottom: 80px;
 }
 
 .col-grid {
@@ -183,29 +260,17 @@ h4 {
   border-top-right-radius: 12px;
 }
 
-/* LISTS */
-
+/* MILK SNAKE INFORMATION */
+.information {
+  margin-bottom: 80px;
+}
 .information-list {
   margin-left: 25px;
   list-style: circle;
   margin-bottom: 52px;
 }
 
-/* LINKS AND BUTTONS */
-nav a:link,
-a:visited {
-  color: #155e75;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-right: 20px;
-}
-nav a:hover,
-a:active {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
+/* FOOTER */
 
 .read-more:link,
 .read-more:visited {
@@ -232,9 +297,26 @@ a:active {
 /* FOOTER */
 .nav-bottom {
   margin-bottom: 24px;
+  display: flex;
+  gap: 48px;
 }
 .copyright-text {
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 10px;
   font-style: italic;
+}
+
+.nav-bottom a:link,
+a:visited {
+  color: #155e75;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.nav-bottom a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
