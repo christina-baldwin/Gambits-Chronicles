@@ -18,17 +18,21 @@ GREY: #343a40
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   color: #343a40;
   line-height: 1.5;
-  border-bottom: 15px solid #155e75;
+  border-bottom: 1.5rem solid #155e75;
 }
 
 .container {
-  width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 img {
@@ -36,37 +40,37 @@ img {
 }
 
 p {
-  margin-bottom: 16px;
-  font-size: 20px;
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
 }
 
 ul {
-  margin-bottom: 16px;
-  font-size: 20px;
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
 }
 
 h1 {
   font-weight: 600;
-  font-size: 62px;
+  font-size: 6.2rem;
   line-height: 1.05;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 h2 {
-  font-size: 44px;
-  margin-bottom: 16px;
-  letter-spacing: -1px;
+  font-size: 4.4rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.1rem;
   color: #155e75;
 }
 
 h3 {
-  font-size: 36px;
-  margin-bottom: 12px;
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
 }
 
 h4 {
-  font-size: 24px;
-  margin-bottom: 12px;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
 }
 
 /* HEADER */
@@ -89,34 +93,33 @@ header {
 }
 
 .nav-top {
-  border-bottom: solid 5px white;
-  padding: 32px;
-  margin-bottom: 24px;
+  border-bottom: solid 0.5rem white;
+  padding: 3.2rem;
+  margin-bottom: 2.4rem;
 
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 2.4rem;
   color: white;
 }
 
 .nav-top a:link,
-a:visited {
+.nav-top a:visited {
   color: white;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 .nav-top a:hover,
-a:active {
+.nav-top a:active {
   text-decoration: none;
   color: #12a1c9;
   cursor: pointer;
 }
 
 .hero {
-  width: 1200px;
   position: absolute;
   /* in relation to the parent size */
   left: 50%;
@@ -130,8 +133,8 @@ a:active {
 }
 
 .hero-inner p {
-  font-size: 24px;
-  margin-bottom: 25px;
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
 }
 
 .btn:link,
@@ -141,12 +144,12 @@ a:active {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  font-size: 24px;
-  padding-right: 14px;
-  padding-left: 14px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  border-radius: 15px;
+  font-size: 2.4rem;
+  padding-right: 1.4rem;
+  padding-left: 1.4rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 1.5rem;
   align-self: flex-start;
   margin-top: auto;
 }
@@ -159,30 +162,30 @@ a:active {
 
 /* WELCOME SECTION */
 .main-text {
-  margin-bottom: 80px;
-  padding-top: 96px;
+  margin-bottom: 8rem;
+  padding-top: 9.6rem;
 }
 
 /* ABOUT GAMBIT */
 .about-gambit {
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  column-gap: 40px;
+  column-gap: 4rem;
 
   background-color: #155e75;
   color: white;
 
-  padding: 16px;
+  padding: 1.6rem;
 
-  border-radius: 12px;
+  border-radius: 1.2rem;
 }
 .about-gambit-tile {
   grid-column: 1 / -1;
   color: white;
-  margin-bottom: 24px;
-  border-bottom: 5px solid white;
+  margin-bottom: 2.4rem;
+  border-bottom: 0.5rem solid white;
 }
 .species {
   text-transform: uppercase;
@@ -231,25 +234,25 @@ a:active {
 
 /* FEATURED POSTS GRID */
 .featured-posts {
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 
 .col-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 80px;
+  column-gap: 8rem;
 }
 
 .post-box {
-  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
-  border-radius: 12px;
+  box-shadow: 0rem 2rem 3rem 0rem rgba(0, 0, 0, 0.07);
+  border-radius: 1.2rem;
 
   display: flex;
   flex-direction: column;
 }
 
 .post-text {
-  padding: 12px;
+  padding: 1.2rem;
   height: 100%;
 
   display: flex;
@@ -257,18 +260,18 @@ a:active {
 }
 
 .post-img {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
 }
 
 /* MILK SNAKE INFORMATION */
 .information {
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 .information-list {
-  margin-left: 25px;
+  margin-left: 2.5rem;
   list-style: circle;
-  margin-bottom: 52px;
+  margin-bottom: 5.2rem;
 }
 
 /* FOOTER */
@@ -280,11 +283,11 @@ a:active {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 15px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1.5rem;
   align-self: flex-start;
   margin-top: auto;
 }
@@ -297,23 +300,23 @@ a:active {
 
 /* FOOTER */
 .nav-bottom {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
   display: flex;
-  gap: 48px;
+  gap: 4.8rem;
 }
 .copyright-text {
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
   font-style: italic;
 }
 
 .nav-bottom a:link,
 a:visited {
   color: #155e75;
-  font-size: 20px;
+  font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 .nav-bottom a:hover,
 a:active {
