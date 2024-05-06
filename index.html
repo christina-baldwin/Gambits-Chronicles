@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Gambit's Chronicles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,31 +14,44 @@
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
+    <link href="queries.css" rel="stylesheet" />
+
+    <script defer src="script.js"></script>
   </head>
 
   <body>
     <header class="main-header">
+      <img src="images/logo.png" class="logo" />
       <nav class="nav-top">
-        <img src="images/logo.png" class="logo" />
         <a href="#">Home</a>
         <a href="#">About Gambit</a>
         <a href="#">Blog</a>
         <a href="#">Contact</a>
       </nav>
-      <div class="hero">
-        <div class="hero-inner">
-          <h1 class="heading-main">The Trials and Tribulations of Gambit</h1>
-          <p>
-            The blog covering different stories and background information about
-            an aging milk snake named Gambit.
-          </p>
-          <a href="#" class="btn">Learn More</a>
-        </div>
-      </div>
     </header>
 
-    <main class="container">
-      <article>
+    <main>
+      <section class="section-hero">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <h1 class="heading-main">The Trials and Tribulations of Gambit</h1>
+            <p class="hero-text">
+              The blog covering different stories and background information
+              about an aging milk snake named Gambit.
+            </p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="hero-right">
+            <img
+              class="hero-img"
+              src="images/IMG_4589a.webp"
+              alt="Photo of Gambit the milk snake"
+            />
+          </div>
+        </div>
+      </section>
+
+      <article class="container">
         <section class="main-text">
           <h2>Welcome to Gambit's Chronicles</h2>
           <p>This is a website dedicated to my milk snake, <em>Gambit</em>.</p>
@@ -63,7 +77,7 @@
           <p class="species">Species:</p>
           <p class="milk-snake">Milk Snake</p>
           <p class="sex">Sex:</p>
-          <p class="male">Male (I think)</p>
+          <p class="male">Male</p>
           <p class="age">Age:</p>
           <p class="yo">17 yo</p>
           <p class="length">Length:</p>
@@ -78,7 +92,7 @@
             <figure class="post-box post-1">
               <img
                 class="post-img"
-                src="images/1262829_707682829259059_1657412534_o.jpg"
+                src="images/1262829_707682829259059_1657412534_o.webp"
               />
               <div class="post-text">
                 <h4>Bringing Gambit Home</h4>
@@ -91,7 +105,7 @@
             </figure>
 
             <figure class="post-box post-2">
-              <img src="images/IMG_4594.JPG" class="post-img" />
+              <img src="images/IMG_4594.webp" class="post-img" />
               <div class="post-text">
                 <h4>My History with Snakes</h4>
                 <p>
@@ -103,7 +117,7 @@
             </figure>
 
             <figure class="post-box post-3">
-              <img class="post-img" src="images/IMG_4236.JPG" />
+              <img class="post-img" src="images/IMG_4236.webp" />
               <div class="post-text">
                 <h4>Learning as you Go</h4>
                 <p>
@@ -119,9 +133,9 @@
         <section class="information">
           <h3 class="information-title">Milk Snake Information</h3>
           <ul class="information-list">
-            <li>Average lifespan:</li>
-            <li>Average length:</li>
-            <li>Average weight:</li>
+            <li>Average lifespan: 15-20 years</li>
+            <li>Average length: 36-183cm</li>
+            <li>Average weight: 38-225g</li>
           </ul>
         </section>
       </article>
